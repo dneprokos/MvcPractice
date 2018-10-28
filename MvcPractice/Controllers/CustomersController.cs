@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace MvcPractice.Controllers
 {
@@ -24,7 +25,7 @@ namespace MvcPractice.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customers = _context.Customers;
+            var customers = _context.Customers.Include(c =>c.MemberShipType).ToList();
             return View(customers);
         }
 
