@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace MvcPractice.Controllers
 {
@@ -24,14 +25,14 @@ namespace MvcPractice.Controllers
         // GET: Movies
         public ActionResult Index()
         {
-            var movies = _context.Movies;
+            var movies = _context.Movies.Include(c =>c.Genre).ToList();
             return View(movies);
         }
 
         //GET: Movie by id
         public ActionResult Details(int id)
         {
-            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+            var movie = _context.Movies.Include(c =>c.Genre).SingleOrDefault(c => c.Id == id);
 
             if (movie == null)
                 return HttpNotFound();

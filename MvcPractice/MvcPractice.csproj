@@ -226,9 +226,18 @@
     <Compile Include="Migrations\201810281309370_Birthday was added to Customer model.Designer.cs">
       <DependentUpon>201810281309370_Birthday was added to Customer model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810281700335_Add Genre table.cs" />
+    <Compile Include="Migrations\201810281700335_Add Genre table.Designer.cs">
+      <DependentUpon>201810281700335_Add Genre table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810281703215_Genre table population.cs" />
+    <Compile Include="Migrations\201810281703215_Genre table population.Designer.cs">
+      <DependentUpon>201810281703215_Genre table population.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MemberShipType.cs" />
@@ -337,6 +346,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810281309370_Birthday was added to Customer model.resx">
       <DependentUpon>201810281309370_Birthday was added to Customer model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810281700335_Add Genre table.resx">
+      <DependentUpon>201810281700335_Add Genre table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810281703215_Genre table population.resx">
+      <DependentUpon>201810281703215_Genre table population.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
