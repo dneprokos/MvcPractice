@@ -222,6 +222,10 @@
     <Compile Include="Migrations\201810281245189_Add value to Name Property of MemberShipType.Designer.cs">
       <DependentUpon>201810281245189_Add value to Name Property of MemberShipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810281309370_Birthday was added to Customer model.cs" />
+    <Compile Include="Migrations\201810281309370_Birthday was added to Customer model.Designer.cs">
+      <DependentUpon>201810281309370_Birthday was added to Customer model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -330,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810281245189_Add value to Name Property of MemberShipType.resx">
       <DependentUpon>201810281245189_Add value to Name Property of MemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810281309370_Birthday was added to Customer model.resx">
+      <DependentUpon>201810281309370_Birthday was added to Customer model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
