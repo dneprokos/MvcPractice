@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace MvcPractice.Models
 {
     public class Customer
@@ -12,5 +14,7 @@ namespace MvcPractice.Models
         public MemberShipType MemberShipType { get; set; }
 
         public byte MemberShipTypeId { get; set; }
+
+        public DateTime? Birthdate { get; set; }
     }
 }
