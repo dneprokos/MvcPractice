@@ -8,6 +8,8 @@ namespace MvcPractice.Models
     {
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Please enter customer's name.")]
+        [StringLength(255)]
         public string Name { get; set; }
 
         public bool isSubscribedToNewsLetter { get; set; }
@@ -18,6 +20,7 @@ namespace MvcPractice.Models
         public byte MemberShipTypeId { get; set; }
 
         [Display(Name = "Date of Birth")]
+        [MinYearsIfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }
