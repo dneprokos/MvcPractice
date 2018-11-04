@@ -1,10 +1,10 @@
-﻿
+﻿using MvcPractice.Models;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MvcPractice.Models
+namespace MvcPractice.DTO
 {
-    public class Customer
+    public class CustomerDto
     {
         public int Id { get; set; }
 
@@ -14,13 +14,9 @@ namespace MvcPractice.Models
 
         public bool isSubscribedToNewsLetter { get; set; }
 
-        public MemberShipType MemberShipType { get; set; }
-
-        [Display(Name = "Membership Type")]
         public byte MemberShipTypeId { get; set; }
 
-        [Display(Name = "Date of Birth")]
-        [MinYearsIfAMember] 
+        //[MinYearsIfAMember] Was disabled because it cannot be invoked from Api.
         public DateTime? Birthdate { get; set; }
     }
 }
